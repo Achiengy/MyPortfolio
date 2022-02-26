@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@200&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+    /* font-family: 'Poppins', sans-serif; */
 }
 
 .max-width{
@@ -12,9 +14,12 @@
 }
 
 /* Navbar Styling */
-.navbar{
+header{
     position: fixed;
     width: 100%;
+}
+
+.navbar{
     z-index: 999;
     background: olivedrab;
     padding: 20px 0;
@@ -27,15 +32,22 @@
     justify-content: space-between;
 }
 
-.navbar .logo a {
+.navbar .logo-text a {
+    position: absolute;
+    float: left;
+    margin-left: -30%;
+    margin-top: -25px;
+    text-decoration: none;
     color: #fff;
     font-size: 32px;
     font-weight: 600;
+    font-family: 'Lobster', 'cursive';
 }
 
-.navbar .logo a span{
+.navbar .logo-text a span{
     color: black;
     transition: all 0.3s ease;
+    font-family: 'Lobster', 'cursive';
 }
 
 .navbar .menu li{
@@ -44,10 +56,12 @@
 }
 
 .navbar .menu li a {
+    margin-right: 10px;
+    text-decoration: none;
     color: #fff;
-    font-size: 17px;
+    font-size: 18px;
     font-weight: bolder;
-    margin-left: 50px;
+    margin-left: 30px;
     transition: color 0.3s ease;
 }
 
@@ -69,12 +83,12 @@
 }
 
 .home .home-content .text-1{
-    font-size: 35px;
+    font-size: 33px;
     font-weight: 500;
 }
 
 .home .home-content .text-2{
-   font-size: 60px;
+   font-size: 50px;
    font-weight: 600;
    margin-left: -3px;
 }
@@ -92,8 +106,17 @@
 .home img{
     background: olivedrab;
     border-radius: 50%;
-    margin-top: 200px;
-    margin-left: 5px;
+    margin-top: 220px;
 }
 
+/* * About section styling */ */
+.about{
+    padding: 100px 0;
+}
 
+.about .about-content .left img{
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+}
