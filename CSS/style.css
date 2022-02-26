@@ -109,10 +109,11 @@ header{
     margin-top: 220px;
 }
 
-/* * About section styling */ */
+/* About section styling */
 .about{
     padding: 100px 0;
 }
+
 .about .title{
     position: relative;
     text-align: center;
@@ -142,3 +143,26 @@ header{
     background: #fff;
     transform: translateX(-50%);
 }
+.about .about-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-between;
+}
+.about .about-content .left{
+     width: 45%;
+}
+.about .about-content .left img{
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.about .about-content .right{
+    width: 55%;
+}
+#text{
+    font-size: 15px;
+    font-weight: bold;
+}
+
