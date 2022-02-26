@@ -8,7 +8,7 @@
 }
 
 .max-width{
-    max-width: 1300px;
+     max-width: 1300px;
     padding: 0 80px;
     margin: auto;
 }
@@ -71,6 +71,7 @@ header{
 
 /* Home Section Styling */
 .home{
+    width: 100%;
     display: flex;
     background-color: #111;
     height: 100vh;
@@ -112,6 +113,8 @@ header{
 /* About section styling */
 .about{
     padding: 100px 0;
+    width: 100%;
+   
 }
 
 .about .title{
@@ -165,4 +168,96 @@ header{
     font-size: 15px;
     font-weight: bold;
 }
+
+/* Project section styling */
+.project{
+    padding: 100px 0;
+    width: 100%;
+    color: #111;
+    background: whitesmoke;
+   
+}
+
+.project .title{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+}
+.project .title:before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: #111;
+    transform: translateX(-50%);
+}
+.project .title:after{
+    content: "work done";
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    font-size: 20px;
+    color: olivedrab;
+    padding: 5px;
+    background: whitesmoke;
+    transform: translateX(-50%);
+}
+
+ .project .project-content {
+    /* padding: 100px 70px; */
+    display: flex;
+    flex-flow: row wrap;
+    
+}
+
+.project .project-content .box{
+    height: 500px;
+    width: 40%;
+    /* border: 1px solid olivedrab;  */
+    box-shadow: 3px 3px 5px grey;
+}
+
+.project .project-content .box img{
+    height: 300px;
+    width: 100%;
+    /* object-fit: contain; */
+}
+
+.txt{
+    text-align: center;
+    font-weight: bold;
+    color: olivedrab;
+}
+#box2{
+    margin-left: 85px;
+}
+#box3{
+    margin-top: 50px;
+}
+#box4{
+    margin-top: 50px;
+    margin-left: 85px;
+}
+
+/* #img1{
+  margin-left: 4px;
+}
+#img2{
+    margin-left: 4px; 
+}
+#img3{
+    margin-left: 4px;
+}
+#img4{
+    margin-left: 4px; 
+} */
+
+
+
+
 
