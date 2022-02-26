@@ -29,7 +29,7 @@
 
 .navbar .logo a {
     color: #fff;
-    font-size: 30px;
+    font-size: 32px;
     font-weight: 600;
 }
 
@@ -53,5 +53,14 @@
 
 .navbar .menu li a:hover{
     color: crimson;
+}
+
+/* Home Section Styling */
+.home{
+    display: flex;
+    background-color: #111;
+    height: 100vh;
+    background-attachment: fixed;
+    color: #fff;
 }
 
