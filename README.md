@@ -28,7 +28,6 @@
 ## Installation
 Git clone https://github.com/Achiengy/MyPortfolio.git
 
-[Go Back to the top](#portfolio)
 ## Technology Used
 * HTML - which was used to build the structure of the pages.
 
@@ -41,8 +40,6 @@ Not fully responsive
 
 ## Reference
 * <a href="https://developer.mozilla.org/en-US/">MDN Documents</a>
-
-[Go Back to the top](#portfolio)
 
 ## Licence
 
@@ -68,7 +65,6 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-[Go Back to the top](#portfolio)
 
 ## Authors Info
 
