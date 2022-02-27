@@ -19,7 +19,7 @@
 <p>This is  a website that shows my portfolio.It contains my  background information,some sample projects that I have worked on and my interests/hobbies.</p>
 
 
-### Requirement
+## Requirement
 
 * Either a computer,phone,tablet or an Ipad
 
