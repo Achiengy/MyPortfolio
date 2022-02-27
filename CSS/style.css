@@ -16,6 +16,8 @@
 }
 
 
+
+
 /* Navbar Styling */
 .navbar{
     position: fixed;
@@ -275,7 +277,7 @@
 /* Contact section styling */
 .contact{
     padding: 100px 0;
-    height: 100vh;
+    height: 90vh;
     width: 100%;
     color: #111; 
     
@@ -323,7 +325,7 @@
 .contact .contact-content .column{
     width: calc(50% - 30px);
 }
-.contact .contact-content .left{
+.contact .contact-content .left .right{
     display: flex;
     flex-direction: column;
 }
@@ -399,6 +401,17 @@
     padding: 6px 20px;
     margin-top: -50px;
     margin-left: 150px;
+}
+
+/* Footer styling */
+footer{
+    background: #222;
+    color: #fff;
+    text-align: center;
+    height: 5vh;
+}
+#copyright{
+    color: olivedrab;
 }
 
 
