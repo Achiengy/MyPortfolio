@@ -335,44 +335,70 @@
 
 .social-icon .fa {
     padding: 20px;
-    font-size: 2em;
+    font-size: 1.7em;
     font-weight: bolder;
     width: 50px;
     text-align: center;
     text-decoration: none;
   }
   
-  /* Add a hover effect if you want */
-  .fa:hover {
-    opacity: 0.7;
-  }
   
   /* Set a specific color for each brand */
-  
-  /* Facebook */
   .fa-facebook {
     color: #1877f2;
   }
-  
-  /* Twitter */
   .fa-twitter {
     color:  #1da1f2;
   }
-
-  .fa-instagram{
+.fa-instagram{
       color: #c32aa3;
   }
-
-  .fa-linkedin{
+.fa-linkedin{
       color: #0a66c2;
   }
-
-  .fa-whatsapp{
+.fa-whatsapp{
     color:  #25d366;
 }
-
 .fa-telegram{
     color:  #0088cc;
+}
+/* Add a hover effect if you want */
+.fa:hover {
+    opacity: 0.7;
+  }
+
+
+  form{
+      width: 400px;
+      height: 350px;
+      border: 1px solid olivedrab;
+  }
+
+  label{
+      font-weight: bold;
+      margin-left: 10px;
+      margin-top: 10px;
+  }
+  input{
+      height: 30px;
+      width: 90%;
+      box-shadow: 2px 2px 5px grey;
+      opacity: 0.8;
+      border: 0;
+      margin-left: 10px;
+  }
+  textarea{
+    margin-left: 10px;
+  }
+
+
+.button{
+    background: olivedrab;
+    color: #fff;
+    font-weight: bold;
+    padding: 6px 20px;
+    margin-top: -50px;
+    margin-left: 150px;
 }
 
 
