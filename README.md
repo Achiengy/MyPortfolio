@@ -10,31 +10,34 @@
 + [Requirement](#requirement)
 + [Installation](#installation)
 + [Technology Used](#technology-used)
++ [Known Bugs](#known-bugs)
 + [Reference](#reference)
 + [Licence](#licence)
 + [Authors Info](#author-Info)
 
 ## Description
-<p>This is  a website that shows my portfolio.It contains my  background information,some sample projects that I have worked on and interests/hobbies.</p>
+<p>This is  a website that shows my portfolio.It contains my  background information,some sample projects that I have worked on and my interests/hobbies.</p>
 
 
-### Requirements
+### Requirement
 
 * Either a computer,phone,tablet or an Ipad
 
 * An access to the Internet
 
-## Installation Process
+## Installation
 Git clone https://github.com/Achiengy/MyPortfolio.git
 
 [Go Back to the top](#portfolio)
 ## Technology Used
 * HTML - which was used to build the structure of the pages.
 
-* CSS - which was used to style the pages incuding the left aside navigation bar.
+* CSS - which was used to style the pages.
 
 * JavaScript - which was used to make the web page interactive.
 
+## Known Bugs
+Not fully responsive
 
 ## Reference
 * <a href="https://developer.mozilla.org/en-US/">MDN Documents</a>
@@ -71,4 +74,5 @@ SOFTWARE.
 
 Linked - [Hope Pete](https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_self_edit_contact_info%3Bm11EDIJVSQu29ovQ2888fA%3D%3D)
 
-[Go Back to the ortfolio)
+[Go Back to the top](#portfolio)
+
