@@ -5,8 +5,11 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-    scroll-behavior: smooth;
     /* font-family: 'Poppins', sans-serif; */
+}
+
+html{
+    scroll-behavior: smooth;
 }
 
 .max-width{
@@ -15,7 +18,30 @@
     margin: auto;
 }
 
+.scroll-up-button{
+    position: fixed;
+    height: 45px;
+    width: 42px;
+    background: olivedrab;
+    color: #fff;
+    right: 30px;
+    bottom: 10px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 35px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 6px;
+    pointer-events: none;
+    z-index: 9999;
+    opacity: 1;
+}
 
+.scroll-up-button.show{
+    opacity: 1;
+    pointer-events: auto;
+    bottom: 30px;
+} 
 
 
 /* Navbar Styling */
