@@ -5,7 +5,6 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-    /* font-family: 'Poppins', sans-serif; */
 }
 
 html{
@@ -23,25 +22,26 @@ html{
     height: 45px;
     width: 42px;
     background: olivedrab;
-    color: #fff;
     right: 30px;
     bottom: 10px;
     text-align: center;
-    line-height: 40px;
-    font-size: 35px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    border-radius: 6px;
-    pointer-events: none;
+    line-height: 45px;
+    color: #fff;
     z-index: 9999;
-    opacity: 1;
+    font-size: 30px;
+    border-radius: 6px;
+    border-bottom-width: 2px;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
 }
 
-.scroll-up-button.show{
+ .scroll-up-button.show{
     opacity: 1;
     pointer-events: auto;
     bottom: 30px;
-} 
+}  
 
 
 /* Navbar Styling */
@@ -49,8 +49,8 @@ html{
     position: fixed;
     width: 100%;
     z-index: 999;
-    background: olivedrab;
     padding: 20px 0;
+    background: olivedrab;
     transition: all 0.3s ease;
 }
 
@@ -73,7 +73,7 @@ html{
 }
 
 .navbar .logo a span{
-    color: black;
+    color: #222;
     transition: all 0.3s ease;
     font-family: 'Lobster', 'cursive';
 }
@@ -84,6 +84,7 @@ html{
 }
 
 .navbar .menu li a {
+    display: block;
     margin-right: 10px;
     text-decoration: none;
     color: #fff;
@@ -96,6 +97,7 @@ html{
 .navbar .menu li a:hover{
     color: #222;
 }
+
 
 
 /* Home Section Styling */
@@ -390,7 +392,6 @@ html{
 .fa-telegram{
     color:  #0088cc;
 }
-/* Add a hover effect if you want */
 .fa:hover {
     opacity: 0.7;
   }
@@ -426,7 +427,7 @@ html{
     font-weight: bold;
     padding: 6px 20px;
     margin-top: -50px;
-    margin-left: 150px;
+    margin-left: 120px;
 }
 
 /* Footer styling */
@@ -442,167 +443,180 @@ footer{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Responsive media query */
-@media (max-width: 1300px){
-    .home .max-width{
-        margin-left: 0px;
-    }
-}
-
-@media (max-width: 1104px){
+/* responsive media query start */
+@media (max-width: 1104px) {
     .about .about-content .left img{
         height: 350px;
         width: 350px;
     }
 }
 
-@media (max-width: 991px){
+@media (max-width: 991px) {
     .max-width{
         padding: 0 50px;
     }
 }
-
 @media (max-width: 947px){
     .menu-btn{
         display: block;
         z-index: 999;
     }
     .menu-btn i.active:before{
-        content: "olivedrab";
-   }
-   header{
-    position: fixed;
-    width: 100%;
-  }
-   .navbar .menu{
-    height: 50vh;
-    left: -100%;
-    top: 0;
-    background: olivedrab;
-    text-align: center;
-    padding-top: 80px;
-    transition: all 0.3s ease;
-}
-.navbar .menu.active{
-    left: 0;
-}
-.navbar .menu li{
-    display: block;
-}
-.navbar .menu li a{
-    display: inline-block;
-    margin: 20px 0;
-    font-size: 25px;
-    color: #fff;
-}
-.home .home-content .text-2{
-    font-size: 70px;
-}
-
-.home .home-content .text-3{
-    font-size: 35px;
-}
-.home .home-content a{
-    font-size: 23px;
-    padding: 8px 18px;
-}
-.max-width{
-    max-width: 800px;
-}
-.about .about-content .column{ 
-    width: 50%;
-}
-.about .about-content .left{ 
-    display: flex;
-    justify-content: center;
-    margin: 0 auto 60px;
-}
-.about .about-content .right{
-    flex: 100%;
-}
-}
-
-@media (max-width: 690px){
+        content: "\f00d";
+    }
+    .navbar .menu{
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        background: olivedrab;
+        text-align: center;
+        padding-top: 80px;
+        transition: all 0.3s ease;
+    }
+    .navbar .menu.active{
+        left: 0;
+    }
+    .navbar .menu li{
+        display: block;
+    }
+    .navbar .menu li a{
+        display: inline-block;
+        margin: 20px 0;
+        font-size: 30px;
+    }
+    .home .home-content .text-2{
+        font-size: 40px;
+    }
+    .home .home-content .text-3{
+        font-size: 25px;
+    }
+    .home .home-content a{
+        font-size: 23px;
+        padding: 10px 30px;
+    }
     .max-width{
-        padding: 0 23px;
+        max-width: 930px;
+    }
+    .about .about-content .column{
+        width: 100%;
+    }
+    .about .about-content .left{
+        display: flex;
+        justify-content: center;
+        margin: 0 auto 60px;
+    }
+    .about .about-content .right{
+        flex: 100%;
+    }
+    .contact .contact-content .column{
+        width: 100%;
+        margin-bottom: 35px;
+    }
+}
+
+@media (max-width: 690px) {
+    .home{
+        width: 100%;
+        display: flex;
+        background: #111;
+        height: 70vh;
+
+    }
+    .max-width{
+        padding: 0 28px;
     }
     .home .home-content .text-2{
         font-size: 60px;
     }
-    
     .home .home-content .text-3{
         font-size: 32px;
     }
     .home .home-content a{
-        font-size: 15px;
-        padding: 6px 16px;
-    }
-}
-@media (max-width: 510px){
-    .home{
-        height: 50vh;
-    }
-    .home .home-content .text-2{
         font-size: 20px;
     }
-    
-    .home .home-content .text-3{
-        font-size: 15px;
-    }
-
-    .home .home-content img{
-        height: 250px;
-        width: 250px;
-        background: olivedrab;
-        border-radius: 50%;
-        margin-top: 100px;
-
-    }
-    .project .project-content {
+    .project .project-content{
         display: flex;
-        flex-direction: row;
+        flex-flow: row wrap;
     }
-
     .project .project-content .box{
         height: 400px;
         width: 40%;
         box-shadow: 3px 3px 5px grey;
+        opacity: 0.7;
     }
     
     .project .project-content .box img{
-        height: 300px;
+        height: 200px;
         width: 100%;
-        
+        object-fit: contain;
+    }
+   footer{
+    background: #222;
+    color: #fff;
+    text-align: center;
+    height: 3vh;
+   }
+}
+
+@media (max-width: 500px) {
+    .home .home-content .text-2{
+        font-size: 50px;
+    }
+    .home .home-content .text-3{
+        font-size: 27px;
+    }
+    .about .about-content .right .text{
+        font-size: 35px;
+    }
+    .contact .right form {
+        flex-direction: column;
+    }
+    .contact .right form .email,
+    .contact .right form .text{
+        margin: 0;
+    }
+    footer{
+        background: #222;
+        color: #fff;
+        text-align: center;
+        height: 3vh;
+       }
+    
+    .scroll-up-btn{
+        right: 15px;
+        bottom: 15px;
+        height: 38px;
+        width: 35px;
+        font-size: 23px;
+        line-height: 38px;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

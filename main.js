@@ -21,7 +21,7 @@ $(document).ready(function(){
       $('html').css("scrollBehavior", "smooth");
   });
 
-  // toggle menu/navbar
+  // toggle menu/navbart
   $('.menu-btn').click(function(){
       $('.navbar .menu').toggleClass("active");
       $('.menu-btn i').toggleClass("active");
@@ -34,4 +34,6 @@ $(document).ready(function(){
         backSpeed: 50,
         loop: true
     });
+
+   
 });
