@@ -323,11 +323,58 @@
 .contact .contact-content .column{
     width: calc(50% - 30px);
 }
+.contact .contact-content .left{
+    display: flex;
+    flex-direction: column;
+}
 
 .contact .contact-content .row i{
     color: olivedrab;
     font-size: 25px;
 }
+
+.social-icon .fa {
+    padding: 20px;
+    font-size: 2em;
+    font-weight: bolder;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+  /* Set a specific color for each brand */
+  
+  /* Facebook */
+  .fa-facebook {
+    color: #1877f2;
+  }
+  
+  /* Twitter */
+  .fa-twitter {
+    color:  #1da1f2;
+  }
+
+  .fa-instagram{
+      color: #c32aa3;
+  }
+
+  .fa-linkedin{
+      color: #0a66c2;
+  }
+
+  .fa-whatsapp{
+    color:  #25d366;
+}
+
+.fa-telegram{
+    color:  #0088cc;
+}
+
 
 
 
