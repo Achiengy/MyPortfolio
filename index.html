@@ -3,31 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalability=0">
     <title>MyPortfolio</title> 
     <link rel="stylesheet" href="./CSS/bootstrap.css"> 
     <link rel="stylesheet" type="text/css" href="./CSS/style.css"> 
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 
     <!-- Header section -->
-    <header>
         <nav class="navbar">
             <div class="max-width">
               
-              <div class="logo-text"><a href="#">Port<span>folio</span></a></div>
+              <div class="logo"><a href="#">Port<span>folio</span></a></div>
                 <ul class="menu">
                   <li><a href="#" id="home">Home</a></li>
-                  <li><a href="#">About</a></li>
-                  <li><a href="#">Projects</a></li>
-                  <li><a href="#">Contact</a></li>
+                  <li><a href="#about">About</a></li>
+                  <li><a href="#project">Projects</a></li>
+                  <li><a href="#contact">Contact</a></li>
                 </ul>
+                <div class="menu-btn">
+                    <i class="fa fa-bars"></i>
+                </div>
             </div>
         </nav>
-    </header>
+    
 
     <!-- Home Section -->
-    <div class="home">
+    <div class="home" id="home">
         <div class="max-width">
             <div class="home-content">
                 <h4 class="text-1">Hello, I am</h4>
@@ -39,7 +43,7 @@
     </div>
 
     <!-- About Section -->
-    <div class="about">
+    <div class="about" id="about">
         <div class="max-width">
             <h2 class="title">About me</h2>
             <div class="about-content">
@@ -47,57 +51,103 @@
                     <img src="./Images/hope2.jpg">
                 </div>
                 <div class="column right">
-                    <p id="text">My name is Hope Achieng' Pete. I have a Bachelor's degree in Business & Information Technology from Multimedia University of Kenya and currently a student at Moringa School pursuing Software Development.<br>I have the experience of working as a marketing specialist in an E-commerce company and I was tasked with daily responsibilities such as developing, monitoring, writing and updating product content contained the website and also coming up with new marketing strategies based on the review of business analytics.<br>My journey into programming started five years ago when I enrolled in the university to pursue my degree.This opened my eyes to the world of softwares and technology that I had never truly explored before.I dived right in and never looked back.Since then I have always been passionate about solving problems through the use of technology.Software development has been my passion ever since.I am fascinated with coding.I have always strived to fulfil my dreams of becoming a software engineer which mainly includes building,testing,and maintaining softwares.<br>I spend my leisure time mostly at home watching motivational videos, reading various books, listening to music and exercising and at times meditating.<br>In essence , I am budding flower ready to open and bloom and saw try me!!! </p>
+                    <p id="text">My name is Hope Achieng' Pete. I have a Bachelor's degree in Business & Information Technology from Multimedia University of Kenya and currently a student at Moringa School pursuing Software Development.<br>I have the experience of working as a marketing specialist in an E-commerce company and I was tasked with daily responsibilities such as developing, monitoring, writing and updating product content contained on the website and also coming up with new marketing strategies based on the review of business analytics.<br>My journey into programming started five years ago when I enrolled in the university to pursue my degree.This opened my eyes to the world of softwares and technology that I had never truly explored before.I dived right in and never looked back.Since then I have always been passionate about solving problems through the use of technology.Software development has been my passion ever since.I am fascinated with coding.I have always strived to fulfil my dreams of becoming a software engineer which mainly includes building,testing,and maintaining softwares.<br>I spend my leisure time mostly at home watching motivational videos, reading various books, listening to music and exercising and at times meditating.<br>In essence , I am budding flower ready to open and bloom and so try me!!! </p>
                  </div>
             </div>
         </div>
     </div>
 
     <!-- Project Section -->
-    <div class="project">
+    <div class="project" id="project">
         <div class="max-width">
-            <h2 class="title">My Projects</h2>
-            <div class="card">
-                <div class="box">
-                    <div>Burger Palace</div>
+            <h2 class="title">Projects</h2>
+            <p id="main">This section contains samples of my work published on github pages with active links to live site.</p>
+            <hr>
+            <div class="project-content">
+
+                <div class="box" id="box1">
+                    <div class="txt">Burger Palace</div>
                     <img src="./Images/web1.png">
-                   
-                     <p></p>
+                    <p>A website that allows restaurant businesses to accept and manage orders(burgers) placed over the internet.</p>
+                    <h6>HTML5 & CSS3</h6>
+                    <a href="https://achiengy.github.io/Burger-Palace/" target="blank">Link to live site</a>
                 </div>
-            </div>
-            <div class="card">
-                <div class="box">
-                    <div>Insurance Website</div>
+
+                <div class="box" id="box2">
+                    <div class="txt">Insurance Website</div>
                     <img src="./Images/web2.png">
-                    
-                     <p></p>
+                   <p>An insurance website to connect with customers,nurture new leads and grow your business.</p>
+                    <h6>HTML5 & CSS3</h6>
+                    <a href="https://achiengy.github.io/Insurance-website/" target="blank">Link to live site</a>
                 </div>
-            </div>
-            <div class="card">
-                <div class="box">
-                    <div>Quiz Board</div>
+
+                <div class="box" id="box3">
+                    <div class="txt">Quiz Board</div>
                     <img src="./Images/web3.png">
-                   
-                     <p></p>
+                   <p>This is an online quiz that can be used as a bief assessment in matters JavaScript programming language.</p>
+                    <h6>HTML5, CSS3 & JAVASCRIPT</h6>
+                    <a href="https://achiengy.github.io/QuizBoard" target="blank">Link to live site</a>
                 </div>
-            </div>
-            <div class="card">
-                <div class="box">
-                    <div>Digi-Fua</div>
+
+                <div class="box" id="box4">
+                    <div class="txt">Digi-Fua</div>
                     <img src="./Images/web4.png">
-                    
-                     <p></p>
+                    <p>It is a website that enables customers to place their laundry orders on the go.</p>
+                    <h6>HTML5, CSS3 & JAVASCRIPT</h6>
+                    <a href="https://achiengy.github.io/Digi-Fua/" target="blank">Link to live site</a>
+                </div>
+                
+            </div>
+    </div>
+</div>
+
+<!-- Contact section -->
+<div class="contact" id="contact">
+    <div class="max-width">
+        <h2 class="title">Contact me</h2>
+           <div class="contact-content">
+               <div class="column left">
+                     <div class="icons">
+                         <div class="row">
+                            <i class="fa fa-user"></i>
+                            <div class="info">
+                                <h5 class="head">Name</h5>
+                                <h6 class="sub-title">Hope Achieng' Pete</h6>
+                            </div>
+                         </div><br>
+                         <div class="row">
+                            <i class="fa fa-phone"></i>
+                            <div class="info">
+                                <h5 class="head">Telephone</h5>
+                                <h6 class="sub-title">0717832352</h6>
+                            </div>
+                         </div><br>
+                         <div class="row">
+                            <i class="fa fa-envelope"></i>
+                            <div class="info">
+                                <h5 class="head">Email</h5>
+                                <h6 class="sub-title">hope.pete@student.moringaschool.com</h6>
+                            </div>
+                         </div>
+
+                     </div>
+                </div>
+                <div class="column right">
+                    <form>
+                        <label>Enter your email*</label>
+                        <input type="email" placeholder="example@gmail.com" name=""><br><br>
+                        <textarea placeholder="Enter your message"></textarea><br><br>
+                        <button class="button" type="submit">Submit</button>
+                    </form>
                 </div>
             </div>
-
-        </div>
-
-
     </div>
+</div>
 
 
-
-  
-    <script src="./main.js"></script>
+<!-- <li><a href="#home"><i class="fa fa-toggle-up"></i></a></li>   -->
+<script src="./main.js"></script>
 </body>
 </html>
+
+
